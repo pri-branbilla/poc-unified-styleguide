@@ -17,10 +17,16 @@
     "@babel/core": "^7.10.4",
     "@babel/runtime": "^7.10.4",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react-native": "^5.3.19",
     "babel-jest": "^26.1.0",
+    "babel-loader": "^8.1.0",
     "eslint": "^7.4.0",
     "jest": "^26.1.0",
     "metro-react-native-babel-preset": "^0.60.0",
+    "react-dom": "16.13.1",
     "react-test-renderer": "16.13.1"
   },
   "jest": {
