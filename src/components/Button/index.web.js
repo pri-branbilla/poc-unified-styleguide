@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Label} from './styles';
+import {Container, Label} from './styles.web';
 
 const Button = () => (
   <Container>
