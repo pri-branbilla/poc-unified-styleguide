@@ -7,11 +7,15 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "storybook-web": "start-storybook -p 9009 -s public",
+    "build-storybook-web": "build-storybook -s public"
   },
   "dependencies": {
     "react": "16.13.1",
+    "react-art": "^16.13.1",
     "react-native": "0.63.0",
+    "react-native-web": "^0.13.4",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
@@ -21,9 +25,12 @@
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "@storybook/react-native": "^5.3.19",
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-preset-react-app": "^9.1.2",
     "eslint": "^7.4.0",
     "jest": "^26.1.0",
     "metro-react-native-babel-preset": "^0.60.0",

@@ -2,8 +2,8 @@ import React from 'react';
 
 import {Container, Label} from './styles.web';
 
-const Button = () => (
-  <Container>
+const Button = ({onPress}) => (
+  <Container onPress={onPress}>
     <Label>Hello World para dar Sorte</Label>
   </Container>
 );
