@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Label} from './styles.native';
+import {Container, Label} from './styles';
 
 const Button = ({onPress}) => (
   <Container onPress={onPress}>
