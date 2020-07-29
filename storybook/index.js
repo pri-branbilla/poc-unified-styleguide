@@ -1,7 +1,10 @@
-import { AppRegistry } from 'react-native';
-import { getStorybookUI, configure } from '@storybook/react-native';
+import React from 'react';
+import {AppRegistry} from 'react-native';
+import {getStorybookUI, configure} from '@storybook/react-native';
+import theme from '../src/theme';
 
 import './rn-addons';
+import {ThemeProvider} from '../helpers/provider';
 
 // import stories
 configure(() => {
@@ -12,8 +15,14 @@ configure(() => {
 // To find allowed options for getStorybookUI
 const StorybookUIRoot = getStorybookUI({});
 
+const StorybookRoot = () => (
+  <ThemeProvider theme={theme}>
+    <StorybookUIRoot />
+  </ThemeProvider>
+);
+
 // If you are using React Native vanilla and after installation you don't see your app name here, write it manually.
 // If you use Expo you can safely remove this line.
-AppRegistry.registerComponent('%APP_NAME%', () => StorybookUIRoot);
+AppRegistry.registerComponent('%APP_NAME%', () => StorybookRoot);
 
-export default StorybookUIRoot;
+export default StorybookRoot;
